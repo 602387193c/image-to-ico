@@ -21,7 +21,7 @@
 1. 确保已安装Python 3.7+
 2. 克隆项目到本地：
 ```bash
-git clone https://github.com/[你的用户名]/image-to-ico.git
+git clone https://github.com/602387193c/image-to-ico.git
 cd image-to-ico
 ```
 
@@ -80,7 +80,7 @@ python Image-to-ico.py
 
 ## 注意事项
 
-- 建议上传分辨率大于或等于最大目标尺寸的图片
+- 请上传方形图片
 - 程序会自动创建输出目录
 - 如果输出目录已存在同名文件，会自动覆盖
 - 批量转换时会保持原文件名（仅改变扩展名为.ico）
@@ -98,7 +98,3 @@ python Image-to-ico.py
 ## 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
-
-## 开发者
-
-[你的名字/ID]
