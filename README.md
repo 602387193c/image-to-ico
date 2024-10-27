@@ -4,7 +4,7 @@
 
 ## 预览
 
-[在此处插入WebUI界面截图]
+![](images/webui.jpg)
 
 ## 特性
 
