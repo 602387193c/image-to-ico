@@ -1,0 +1,11 @@
+version: '3'
+services:
+  image-to-ico:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./output:/app/output
+    environment:
+      - GRADIO_SERVER_NAME=0.0.0.0
+    restart: unless-stopped

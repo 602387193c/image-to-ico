@@ -223,13 +223,12 @@ if __name__ == "__main__":
     # 获取系统临时目录
     temp_dir = tempfile.gettempdir()
     
-    # 启动 Gradio
+    # 启动 Gradio（Docker环境优化设置）
     demo.launch(
         server_port=7860,
-        server_name="127.0.0.1",
-        share=True,
+        server_name="0.0.0.0",  # 允许外部访问
+        share=False,            # 在Docker中关闭share功能
         show_error=True,
-        inbrowser=True,
-        # 允许访问临时目录和当前目录
-        allowed_paths=[".", temp_dir]
+        inbrowser=False,        # 在Docker中不需要自动打开浏览器
+        allowed_paths=[".", temp_dir]  # 允许访问临时目录和当前目录
     )
